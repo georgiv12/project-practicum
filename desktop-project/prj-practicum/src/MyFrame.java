@@ -23,11 +23,11 @@ public class MyFrame extends JFrame{
 	JPanel midPanel = new JPanel();
 	JPanel downPanel = new JPanel();
 	
-	JButton addButton = new JButton("Add");
-	JButton delButton = new JButton("Delete");
-	JButton editButton = new JButton("Edit");
-	JButton cancelBtn = new JButton("Cancel");
-	JButton saveChangesButton = new JButton("Save");
+	JButton addButton = new JButton("Добави");
+	JButton delButton = new JButton("Изтрий");
+	JButton editButton = new JButton("Промени");
+	JButton cancelBtn = new JButton("Откажи");
+	JButton saveChangesButton = new JButton("Запази");
 	
 	JLabel nameLabel = new JLabel("Name:");
 	JLabel ageLabel = new JLabel("Age:");
