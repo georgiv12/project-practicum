@@ -72,10 +72,7 @@ public class StudentsFrame extends JFrame{
 		scroller.setPreferredSize(new Dimension(300,100));
 		downPanel.add(scroller);
 
-
 		table.setModel(getAllFromTable("students"));
-
-
 	}//end constructor
 
 	public JPanel getPanel1() {
