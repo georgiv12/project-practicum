@@ -9,27 +9,27 @@ import java.sql.SQLException;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
-public class MyFrame extends JFrame{
+public class StudentsFrame extends JFrame{
 	Connection conn = null;
 	public static Object AddAction;
 	ResultSet result = null;
 	MyModel model = null;
 
 	JTable table = new JTable();
-	JScrollPane scroller = new JScrollPane(table);
 
+	JScrollPane scroller = new JScrollPane(table);
 
 	JPanel upPanel = new JPanel();
 	JPanel midPanel = new JPanel();
 	JPanel downPanel = new JPanel();
-	
+
 	JButton addButton = new JButton("Добави");
 	JButton delButton = new JButton("Изтрий");
 	JButton editButton = new JButton("Промени");
 	JButton cancelBtn = new JButton("Откажи");
 	JButton saveChangesButton = new JButton("Запази");
 	
-	JLabel nameLabel = new JLabel("Name:");
+	JLabel nameLabel = new JLabel("Ime:");
 	JLabel ageLabel = new JLabel("Age:");
 	JLabel gradeLabel = new JLabel("Avarage Grade");
 	JLabel genderLabel = new JLabel("Gender:");
@@ -40,15 +40,14 @@ public class MyFrame extends JFrame{
 	JComboBox<String> genderCombo = new JComboBox<>(genders);
 	private PreparedStatement state;
 
-	public MyFrame() {
-		this.setVisible(true);
-		this.setSize(400, 400);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setLayout(new GridLayout(3,1));
-		this.add(upPanel);
-		this.add(midPanel);
-		this.add(downPanel);
-		
+	JPanel panel1 = new JPanel();
+
+
+	public StudentsFrame() {
+
+		panel1.add(upPanel);
+		panel1.add(midPanel);
+		panel1.add(downPanel);
 		//upPanel
 		upPanel.setLayout(new GridLayout(4,2));
 		upPanel.add(nameLabel);
@@ -74,13 +73,18 @@ public class MyFrame extends JFrame{
 		downPanel.add(scroller);
 
 
-		table.setModel(getAllFromTable());
+		table.setModel(getAllFromTable("students"));
+
 
 	}//end constructor
 
-	public MyModel getAllFromTable(){
+	public JPanel getPanel1() {
+		return panel1;
+	}
+
+	public MyModel getAllFromTable(String type){
 		conn = DBConnector.getConnection();
-		String sql_query = " select * from students";
+		String sql_query = " select * from " + type;
 
 		try {
 			state = conn.prepareStatement(sql_query);
@@ -119,7 +123,7 @@ public class MyFrame extends JFrame{
 				state.setFloat(3, avgGrade);
 				state.setString(4, gender);
 				state.execute();
-				table.setModel(getAllFromTable());
+				table.setModel(getAllFromTable("students"));
 				nameTField.setText("");
 				ageTField.setText("");
 				gradeTField.setText("");
@@ -144,7 +148,7 @@ public class MyFrame extends JFrame{
 				state = conn.prepareStatement(query);
 				state.setString(1, currID);
 				state.execute();
-				table.setModel(getAllFromTable());
+				table.setModel(getAllFromTable("students"));
 
 			} catch (SQLException ex) {
 				ex.printStackTrace();
@@ -219,7 +223,7 @@ public class MyFrame extends JFrame{
 				state.setString(4, editedGender);
 				state.setString(5, table.getValueAt(table.getSelectedRow(), 0).toString());
 				state.execute();
-				table.setModel(getAllFromTable());
+				table.setModel(getAllFromTable("students"));
 				nameTField.setText("");
 				ageTField.setText("");
 				gradeTField.setText("");
