@@ -16,23 +16,20 @@ public class StudentsFrame extends JFrame{
 	MyModel model = null;
 
 	JTable table = new JTable();
+
 	JScrollPane scroller = new JScrollPane(table);
-
-
-
-
 
 	JPanel upPanel = new JPanel();
 	JPanel midPanel = new JPanel();
 	JPanel downPanel = new JPanel();
-	
+
 	JButton addButton = new JButton("Добави");
 	JButton delButton = new JButton("Изтрий");
 	JButton editButton = new JButton("Промени");
 	JButton cancelBtn = new JButton("Откажи");
 	JButton saveChangesButton = new JButton("Запази");
-	
-	JLabel nameLabel = new JLabel("Name:");
+
+	JLabel nameLabel = new JLabel("Ime:");
 	JLabel ageLabel = new JLabel("Age:");
 	JLabel gradeLabel = new JLabel("Avarage Grade");
 	JLabel genderLabel = new JLabel("Gender:");
@@ -75,17 +72,16 @@ public class StudentsFrame extends JFrame{
 		scroller.setPreferredSize(new Dimension(300,100));
 		downPanel.add(scroller);
 
-		table.setModel(getAllFromTable());
+		table.setModel(getAllFromTable("students"));
 	}//end constructor
 
 	public JPanel getPanel1() {
 		return panel1;
 	}
-//end constructor
 
-	public MyModel getAllFromTable(){
+	public MyModel getAllFromTable(String type){
 		conn = DBConnector.getConnection();
-		String sql_query = " select * from students";
+		String sql_query = " select * from " + type;
 
 		try {
 			state = conn.prepareStatement(sql_query);
@@ -115,7 +111,7 @@ public class StudentsFrame extends JFrame{
 				gender = "m";
 			}
 			conn = DBConnector.getConnection();
-															//0,1,2,3 like arrays
+			//0,1,2,3 like arrays
 			String query = "insert into students values(null, ?,?,?,?);";
 			try {
 				state = conn.prepareStatement(query);
@@ -124,7 +120,7 @@ public class StudentsFrame extends JFrame{
 				state.setFloat(3, avgGrade);
 				state.setString(4, gender);
 				state.execute();
-				table.setModel(getAllFromTable());
+				table.setModel(getAllFromTable("students"));
 				nameTField.setText("");
 				ageTField.setText("");
 				gradeTField.setText("");
@@ -149,7 +145,7 @@ public class StudentsFrame extends JFrame{
 				state = conn.prepareStatement(query);
 				state.setString(1, currID);
 				state.execute();
-				table.setModel(getAllFromTable());
+				table.setModel(getAllFromTable("students"));
 
 			} catch (SQLException ex) {
 				ex.printStackTrace();
@@ -224,7 +220,7 @@ public class StudentsFrame extends JFrame{
 				state.setString(4, editedGender);
 				state.setString(5, table.getValueAt(table.getSelectedRow(), 0).toString());
 				state.execute();
-				table.setModel(getAllFromTable());
+				table.setModel(getAllFromTable("students"));
 				nameTField.setText("");
 				ageTField.setText("");
 				gradeTField.setText("");
@@ -234,6 +230,5 @@ public class StudentsFrame extends JFrame{
 				ex.printStackTrace();
 			}
 		}
-
 	}
 }//end class MyFrame
