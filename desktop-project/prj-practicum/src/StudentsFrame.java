@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
-public class MyFrame extends JFrame{
+public class StudentsFrame extends JFrame{
 	Connection conn = null;
 	public static Object AddAction;
 	ResultSet result = null;
@@ -17,6 +17,9 @@ public class MyFrame extends JFrame{
 
 	JTable table = new JTable();
 	JScrollPane scroller = new JScrollPane(table);
+
+
+
 
 
 	JPanel upPanel = new JPanel();
@@ -40,15 +43,14 @@ public class MyFrame extends JFrame{
 	JComboBox<String> genderCombo = new JComboBox<>(genders);
 	private PreparedStatement state;
 
-	public MyFrame() {
-		this.setVisible(true);
-		this.setSize(400, 400);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setLayout(new GridLayout(3,1));
-		this.add(upPanel);
-		this.add(midPanel);
-		this.add(downPanel);
-		
+	JPanel panel1 = new JPanel();
+
+
+	public StudentsFrame() {
+
+		panel1.add(upPanel);
+		panel1.add(midPanel);
+		panel1.add(downPanel);
 		//upPanel
 		upPanel.setLayout(new GridLayout(4,2));
 		upPanel.add(nameLabel);
@@ -73,10 +75,13 @@ public class MyFrame extends JFrame{
 		scroller.setPreferredSize(new Dimension(300,100));
 		downPanel.add(scroller);
 
-
 		table.setModel(getAllFromTable());
-
 	}//end constructor
+
+	public JPanel getPanel1() {
+		return panel1;
+	}
+//end constructor
 
 	public MyModel getAllFromTable(){
 		conn = DBConnector.getConnection();
@@ -229,5 +234,6 @@ public class MyFrame extends JFrame{
 				ex.printStackTrace();
 			}
 		}
+
 	}
 }//end class MyFrame
