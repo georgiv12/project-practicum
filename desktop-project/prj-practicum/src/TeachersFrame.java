@@ -33,13 +33,13 @@ public class TeachersFrame extends JFrame{
     JButton saveChangesButton = new JButton("Запази");
 
     JLabel nameLabel = new JLabel("Name:");
-    JLabel secondName = new JLabel("Second Name:");
+    JLabel townLabel = new JLabel("Town:");
     JLabel titleLabel = new JLabel("Title:");
-    JLabel subjectLabel = new JLabel("Subject:");
+    JLabel universityLabel = new JLabel("University:");
     JTextField nameTField = new JTextField();
-    JTextField secondNameTField = new JTextField();
+    JTextField townTField = new JTextField();
     JTextField titleTField = new JTextField();
-    JTextField subjectTField = new JTextField();
+    JTextField universityTField = new JTextField();
 
     private PreparedStatement state;
 
@@ -55,12 +55,12 @@ public class TeachersFrame extends JFrame{
         upPanel.setLayout(new GridLayout(4,2));
         upPanel.add(nameLabel);
         upPanel.add(nameTField);
-        upPanel.add(secondName);
-        upPanel.add(secondNameTField);
+        upPanel.add(townLabel);
+        upPanel.add(townTField);
         upPanel.add(titleLabel);
         upPanel.add(titleTField);
-        upPanel.add(subjectLabel);
-        upPanel.add(subjectTField);
+        upPanel.add(universityLabel);
+        upPanel.add(universityTField);
         //midPanel
         midPanel.add(addButton);
         midPanel.add(delButton);
@@ -75,7 +75,11 @@ public class TeachersFrame extends JFrame{
         scroller.setPreferredSize(new Dimension(300,100));
         downPanel.add(scroller);
 
+
+
+
         table.setModel(getAllFromTable());
+        table.removeColumn(table.getColumnModel().getColumn(0));
     }//end constructor
 
     public JPanel getPanel2() {
@@ -92,6 +96,7 @@ public class TeachersFrame extends JFrame{
             result = state.executeQuery();
             model = new MyModel(result);
 
+
         } catch (SQLException e) {
             e.printStackTrace();
         }  catch (Exception e) {
@@ -106,24 +111,25 @@ public class TeachersFrame extends JFrame{
         @Override
         public void actionPerformed(ActionEvent e) {
             String name = nameTField.getText();
-            String secondName = secondNameTField.getText();
+            String town = townTField.getText();
             String title  = titleTField.getText();
-            String subject = subjectTField.getText();
+            String university = universityTField.getText();
             conn = DBConnector.getConnection();
             //0,1,2,3 like arrays
             String query = "insert into teachers values(null, ?,?,?,?);";
             try {
                 state = conn.prepareStatement(query);
                 state.setString(1, name);
-                state.setString(2, secondName);
+                state.setString(2, town);
                 state.setString(3, title);
-                state.setString(4, subject);
+                state.setString(4, university);
                 state.execute();
                 table.setModel(getAllFromTable());
+                table.removeColumn(table.getColumnModel().getColumn(0));
                 nameTField.setText("");
-                secondNameTField.setText("");
+                townTField.setText("");
                 titleTField.setText("");
-                subjectTField.setText("");
+                universityTField.setText("");
 
             } catch (SQLException ex) {
                 ex.printStackTrace();
@@ -145,7 +151,7 @@ public class TeachersFrame extends JFrame{
                 state.setString(1, currID);
                 state.execute();
                 table.setModel(getAllFromTable());
-
+                table.removeColumn(table.getColumnModel().getColumn(0));
             } catch (SQLException ex) {
                 ex.printStackTrace();
             }
@@ -155,10 +161,10 @@ public class TeachersFrame extends JFrame{
     public class EditAction implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent event) {
-            nameTField.setText(table.getValueAt(table.getSelectedRow(), 1).toString());
-            secondNameTField.setText(table.getValueAt(table.getSelectedRow(), 2).toString());
-            titleTField.setText(table.getValueAt(table.getSelectedRow(), 3).toString());
-            subjectTField.setText(table.getValueAt(table.getSelectedRow(),4).toString());
+            nameTField.setText(table.getValueAt(table.getSelectedRow(), 0).toString());
+            townTField.setText(table.getValueAt(table.getSelectedRow(), 1).toString());
+            titleTField.setText(table.getValueAt(table.getSelectedRow(), 2).toString());
+            universityTField.setText(table.getValueAt(table.getSelectedRow(),3).toString());
 
 
             editButton.setVisible(false);
@@ -173,9 +179,9 @@ public class TeachersFrame extends JFrame{
         @Override
         public void actionPerformed(ActionEvent event) {
             nameTField.setText("");
-            secondNameTField.setText("");
+            townTField.setText("");
             titleTField.setText("");
-            titleTField.setText("");
+            universityTField.setText("");
 
             cancelBtn.setVisible(false);
             saveChangesButton.setVisible(false);
@@ -188,27 +194,32 @@ public class TeachersFrame extends JFrame{
         @Override
         public void actionPerformed(ActionEvent actionEvent) {
 
+            int column = 0;
+            int row = table.getSelectedRow();
+            String curID = table.getModel().getValueAt(row,column).toString();
+
             String editedName = nameTField.getText();
-            String editSecondName = secondNameTField.getText();
+            String editTown = townTField.getText();
             String editTitle = titleTField.getText();
-            String editSubject = subjectTField.getText();
+            String editUniversity = universityTField.getText();
 
             conn = DBConnector.getConnection();
             //0,1,2,3 like arrays
-            String update_query = "UPDATE TEACHERS SET NAME = ?, SECONDNAME = ?, TITLE = ?, SUBJECT = ? WHERE ID = ?";
+            String update_query = "UPDATE TEACHERS SET NAME = ?, TOWN = ?, TITLE = ?, UNIVERSITY = ? WHERE ID = ?";
             try {
                 state = conn.prepareStatement(update_query);
                 state.setString(1, editedName);
-                state.setString(2, editSecondName);
+                state.setString(2, editTown);
                 state.setString(3, editTitle);
-                state.setString(4, editSubject);
-                state.setString(5, table.getValueAt(table.getSelectedRow(), 0).toString());
+                state.setString(4, editUniversity);
+                state.setString(5, curID);
                 state.execute();
                 table.setModel(getAllFromTable());
+                table.removeColumn(table.getColumnModel().getColumn(0));
                 nameTField.setText("");
-                secondNameTField.setText("");
+                townTField.setText("");
                 titleTField.setText("");
-                subjectTField.setText("");
+                universityTField.setText("");
             } catch (SQLException ex) {
                 ex.printStackTrace();
             }

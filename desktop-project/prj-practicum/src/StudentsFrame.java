@@ -73,6 +73,7 @@ public class StudentsFrame extends JFrame{
 		downPanel.add(scroller);
 
 		table.setModel(getAllFromTable("students"));
+		table.removeColumn(table.getColumnModel().getColumn(0));
 	}//end constructor
 
 	public JPanel getPanel1() {
