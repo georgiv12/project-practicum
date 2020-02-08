@@ -4,7 +4,7 @@ public class Tab extends JFrame {
 
     JTabbedPane tab = new JTabbedPane();
 
-    //JPanel panel1 = new StudentsFrame().getPanel1();
+    JPanel panel1 = new StudentsFrame().getPanel1();
 
     JPanel panel2 = new TeachersFrame().getPanel2();
 
@@ -15,8 +15,7 @@ public class Tab extends JFrame {
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setVisible(true);
 
-        tab.add("paneltest", new JPanel());
-      //  tab.add("студенти", panel1);
+        tab.add("студенти", panel1);
 
         tab.add("преподаватели",panel2);
 

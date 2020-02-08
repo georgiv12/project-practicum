@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="676a0358-af3c-487f-8470-8822fdf4a293" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstprj-gv/MainClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/MyFrame$AddAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/MyFrame$CancelAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/MyFrame$DelAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/MyFrame$EditAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/MyFrame$SaveAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/MyFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StudentsFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/StudentsFrame$AddAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstprj-gv/StudentsFrame$AddAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/StudentsFrame$CancelAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstprj-gv/StudentsFrame$CancelAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/StudentsFrame$DelAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstprj-gv/StudentsFrame$DelAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/StudentsFrame$EditAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstprj-gv/StudentsFrame$EditAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/StudentsFrame$SaveAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstprj-gv/StudentsFrame$SaveAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/StudentsFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstprj-gv/StudentsFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/Tab.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstprj-gv/Tab.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StudentsFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StudentsFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tab.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,6 +99,7 @@
       <workItem from="1580553916213" duration="730000" />
       <workItem from="1580555024606" duration="101000" />
       <workItem from="1580555239083" duration="11537000" />
+      <workItem from="1581187284478" duration="563000" />
     </task>
     <servers />
   </component>
