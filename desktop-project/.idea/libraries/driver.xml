@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="driver">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/prj-practicum/driver" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/prj-practicum/driver" recursive="false" />
+  </library>
+</component>
