@@ -10,16 +10,20 @@ public class Tab extends JFrame {
 
     JPanel panel3 = new UniversityFrame().getPanel3();
 
+    JPanel panel4 = new SearchFrame().getPanel4();
+
     public Tab() {
         this.setSize(500, 500);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setVisible(true);
 
-        tab.add("студенти", panel1);
+        tab.add("students", panel1);
 
-        tab.add("преподаватели",panel2);
+        tab.add("teachers",panel2);
 
-        tab.add("университети",panel3);
+        tab.add("universities",panel3);
+
+        tab.add("search engine", panel4);
 
         this.add(tab);
     }
