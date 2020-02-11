@@ -24,19 +24,19 @@ public class StudentsFrame extends JFrame{
 	JPanel midPanel = new JPanel();
 	JPanel downPanel = new JPanel();
 
-	JButton addButton = new JButton("Добави");
-	JButton delButton = new JButton("Изтрий");
-	JButton editButton = new JButton("Промени");
-	JButton cancelBtn = new JButton("Откажи");
-	JButton saveChangesButton = new JButton("Запази");
+	JButton addButton = new JButton("Add");
+	JButton delButton = new JButton("Delete");
+	JButton editButton = new JButton("Edit");
+	JButton cancelBtn = new JButton("Cancel");
+	JButton saveChangesButton = new JButton("Save");
 
-	JLabel nameLabel = new JLabel("Ime:");
-	JLabel townLabel = new JLabel("Grad:");
+	JLabel nameLabel = new JLabel("Name:");
+	JLabel townLabel = new JLabel("Town:");
 	JLabel ageLabel = new JLabel("Age:");
 
 	JLabel gradeLabel = new JLabel("Avarage Grade:");
 	JLabel genderLabel = new JLabel("Gender:");
-	JLabel uniLabel = new JLabel("Universitet:");
+	JLabel uniLabel = new JLabel("University:");
 
 	JTextField nameTField = new JTextField();
 	JTextField townTField = new JTextField();

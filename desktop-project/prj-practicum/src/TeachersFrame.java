@@ -26,11 +26,11 @@ public class TeachersFrame extends JFrame{
     JPanel midPanel = new JPanel();
     JPanel downPanel = new JPanel();
 
-    JButton addButton = new JButton("Добави");
-    JButton delButton = new JButton("Изтрий");
-    JButton editButton = new JButton("Промени");
-    JButton cancelBtn = new JButton("Откажи");
-    JButton saveChangesButton = new JButton("Запази");
+    JButton addButton = new JButton("Add");
+    JButton delButton = new JButton("Delete");
+    JButton editButton = new JButton("Edit");
+    JButton cancelBtn = new JButton("Cancel");
+    JButton saveChangesButton = new JButton("Save");
 
     JLabel nameLabel = new JLabel("Name:");
     JLabel townLabel = new JLabel("Town:");
@@ -74,7 +74,6 @@ public class TeachersFrame extends JFrame{
         //downPanel
         scroller.setPreferredSize(new Dimension(300,100));
         downPanel.add(scroller);
-
 
 
 

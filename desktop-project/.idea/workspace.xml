@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d99d52fb-9bb8-4df6-b4af-a607ae693885" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/META-INF/prj-practicum.kotlin_module" beforeDir="false" />
+>>>>>>> ce070eda891c11e2e62df75ce070de142a51ac67
       <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/StudentsFrame$AddAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/StudentsFrame$AddAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/StudentsFrame$CancelAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/StudentsFrame$CancelAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/StudentsFrame$DelAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/StudentsFrame$DelAction.class" afterDir="false" />
@@ -10,9 +16,25 @@
       <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/StudentsFrame$SaveAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/StudentsFrame$SaveAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/StudentsFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/StudentsFrame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/Tab.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/Tab.class" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/prj-practicum/src/StudentsFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/prj-practicum/src/StudentsFrame.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
+=======
+      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame$AddAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame$AddAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame$CancelAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame$CancelAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame$DelAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame$DelAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame$EditAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame$EditAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame$SaveAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame$SaveAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/UniversityFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/UniversityFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj-practicum/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/prj-practicum/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj-practicum/src/StudentsFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/prj-practicum/src/StudentsFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj-practicum/src/Tab.java" beforeDir="false" afterPath="$PROJECT_DIR$/prj-practicum/src/Tab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj-practicum/src/TeachersFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/prj-practicum/src/TeachersFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj-practicum/src/UniversityFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/prj-practicum/src/UniversityFrame.java" afterDir="false" />
+    </list>
+>>>>>>> ce070eda891c11e2e62df75ce070de142a51ac67
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +44,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
@@ -109,6 +132,8 @@
       </file>
     </leaf>
   </component>
+=======
+>>>>>>> ce070eda891c11e2e62df75ce070de142a51ac67
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -127,6 +152,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -181,6 +207,17 @@
       </pane>
       <pane id="Scope" />
     </panes>
+=======
+  <component name="ProjectId" id="1XZxqeja24sTFKOZzjiXog7XqdV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+>>>>>>> ce070eda891c11e2e62df75ce070de142a51ac67
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -221,9 +258,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581025072349</updated>
+      <workItem from="1581267612355" duration="16658000" />
     </task>
     <servers />
   </component>
+<<<<<<< HEAD
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
@@ -337,21 +376,20 @@
         </state>
       </provider>
     </entry>
+=======
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+>>>>>>> ce070eda891c11e2e62df75ce070de142a51ac67
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
