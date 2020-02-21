@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d99d52fb-9bb8-4df6-b4af-a607ae693885" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/META-INF/prj-practicum.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/StudentsFrame$AddAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/StudentsFrame$AddAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/StudentsFrame$CancelAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/StudentsFrame$CancelAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/StudentsFrame$DelAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/StudentsFrame$DelAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/StudentsFrame$EditAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/StudentsFrame$EditAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/StudentsFrame$SaveAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/StudentsFrame$SaveAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/StudentsFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/StudentsFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/Tab.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/Tab.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame$AddAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame$AddAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame$CancelAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame$CancelAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame$DelAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame$DelAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame$EditAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame$EditAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame$SaveAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame$SaveAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/TeachersFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prj-practicum/UniversityFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prj-practicum/UniversityFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj-practicum/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/prj-practicum/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj-practicum/src/StudentsFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/prj-practicum/src/StudentsFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj-practicum/src/Tab.java" beforeDir="false" afterPath="$PROJECT_DIR$/prj-practicum/src/Tab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj-practicum/src/TeachersFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/prj-practicum/src/TeachersFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj-practicum/src/UniversityFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/prj-practicum/src/UniversityFrame.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.mm">
     <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainClass" />
       <module name="prj-practicum" />
@@ -81,8 +60,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="mm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mm" />
+      <module name="prj-practicum" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.mm" />
         <item itemvalue="Application.MainClass" />
       </list>
     </recent_temporary>
@@ -97,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581025072349</updated>
-      <workItem from="1581267612355" duration="16658000" />
+      <workItem from="1581267612355" duration="21027000" />
     </task>
     <servers />
   </component>
