@@ -71,7 +71,7 @@ public class UniversityFrame extends JFrame{
         cancelBtn.addActionListener(new CancelAction());
         saveChangesButton.addActionListener(new SaveAction());
         //downPanel
-        scroller.setPreferredSize(new Dimension(300,100));
+        scroller.setPreferredSize(new Dimension(450,200));
         downPanel.add(scroller);
 
 
@@ -96,7 +96,6 @@ public class UniversityFrame extends JFrame{
             result = state.executeQuery();
             model = new MyModel(result);
 
-
         } catch (SQLException e) {
             e.printStackTrace();
         }  catch (Exception e) {
@@ -116,19 +115,20 @@ public class UniversityFrame extends JFrame{
 
             conn = DBConnector.getConnection();
             //0,1,2,3 like arrays
-            String query = "insert into university values(null, ?,?,?);";
+            String query = "insert into university values(null,?,?,?);";
             try {
                 state = conn.prepareStatement(query);
                 state.setString(1, name);
                 state.setString(2, town);
                 state.setString(3, postalCode);
-
                 state.execute();
                 table.setModel(getAllFromTable());
                 table.removeColumn(table.getColumnModel().getColumn(0));
+
                 nameTField.setText("");
                 townTField.setText("");
                 postalCodeTField.setText("");
+
 
 
             } catch (SQLException ex) {
@@ -219,6 +219,11 @@ public class UniversityFrame extends JFrame{
                 townTField.setText("");
                 postalCodeTField.setText("");
 
+                cancelBtn.setVisible(false);
+                saveChangesButton.setVisible(false);
+                editButton.setVisible(true);
+
+                midPanel.validate();
             } catch (SQLException ex) {
                 ex.printStackTrace();
             }

@@ -117,6 +117,8 @@ public class StudentsFrame extends JFrame{
 
 	}
 
+
+
 	public class AddAction implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
@@ -144,6 +146,8 @@ public class StudentsFrame extends JFrame{
 				state.setString(6,uni);
 				state.execute();
 				table.setModel(getAllFromTable("students"));
+				table.removeColumn(table.getColumnModel().getColumn(0));
+
 				nameTField.setText("");
 				townTField.setText("");
 				ageTField.setText("");
@@ -266,6 +270,11 @@ public class StudentsFrame extends JFrame{
 				gradeTField.setText("");
 				genderCombo.setSelectedItem("Female");
 				uniTField.setText("");
+				cancelBtn.setVisible(false);
+				saveChangesButton.setVisible(false);
+				editButton.setVisible(true);
+
+				midPanel.validate();
 
 			} catch (SQLException ex) {
 				ex.printStackTrace();

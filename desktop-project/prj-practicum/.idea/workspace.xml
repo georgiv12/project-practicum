@@ -2,10 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="676a0358-af3c-487f-8470-8822fdf4a293" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/prj-practicum/StudentsFrame$AddAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/prj-practicum/StudentsFrame$AddAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/prj-practicum/StudentsFrame$CancelAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/prj-practicum/StudentsFrame$CancelAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/prj-practicum/StudentsFrame$DelAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/prj-practicum/StudentsFrame$DelAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/prj-practicum/StudentsFrame$EditAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/prj-practicum/StudentsFrame$EditAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/prj-practicum/StudentsFrame$SaveAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/prj-practicum/StudentsFrame$SaveAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/prj-practicum/StudentsFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/prj-practicum/StudentsFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/prj-practicum/Tab.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/prj-practicum/Tab.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstprj-gv/MainClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/SearchFrame$SearchAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstprj-gv/SearchFrame$SearchAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/StudentsFrame$AddAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstprj-gv/StudentsFrame$AddAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/StudentsFrame$CancelAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstprj-gv/StudentsFrame$CancelAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/StudentsFrame$DelAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstprj-gv/StudentsFrame$DelAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/StudentsFrame$EditAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstprj-gv/StudentsFrame$EditAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/StudentsFrame$SaveAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstprj-gv/StudentsFrame$SaveAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/TeachersFrame$SaveAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstprj-gv/TeachersFrame$SaveAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/TeachersFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstprj-gv/TeachersFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/UniversityFrame$AddAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstprj-gv/UniversityFrame$AddAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/UniversityFrame$SaveAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstprj-gv/UniversityFrame$SaveAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/UniversityFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstprj-gv/UniversityFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstprj-gv/mm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StudentsFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StudentsFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TeachersFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TeachersFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UniversityFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UniversityFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mm.java" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,18 +74,6 @@
       <recent name="C:\Users\Georgi\Desktop\MyFirstProject\firstprj-gv\src" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainClass" />
@@ -90,6 +104,10 @@
       <workItem from="1580555024606" duration="101000" />
       <workItem from="1580555239083" duration="11537000" />
       <workItem from="1581187284478" duration="3285000" />
+      <workItem from="1582403746457" duration="712000" />
+      <workItem from="1582454359163" duration="7950000" />
+      <workItem from="1582651449706" duration="57000" />
+      <workItem from="1582651544751" duration="756000" />
     </task>
     <servers />
   </component>

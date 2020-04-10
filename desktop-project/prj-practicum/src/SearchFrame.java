@@ -194,7 +194,9 @@ public class SearchFrame extends JFrame {
                 table.setModel(model);
                 table1.setModel(model1);
                 table2.setModel(model2);
-
+                table.removeColumn(table.getColumnModel().getColumn(0));
+                table1.removeColumn(table1.getColumnModel().getColumn(0));
+                table2.removeColumn(table2.getColumnModel().getColumn(0));
                 townTField.setText("");
                 uniTField.setText("");
             } catch (SQLException ex) {

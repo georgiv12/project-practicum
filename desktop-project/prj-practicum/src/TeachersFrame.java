@@ -72,7 +72,7 @@ public class TeachersFrame extends JFrame{
         cancelBtn.addActionListener(new CancelAction());
         saveChangesButton.addActionListener(new SaveAction());
         //downPanel
-        scroller.setPreferredSize(new Dimension(300,100));
+        scroller.setPreferredSize(new Dimension(450,200));
         downPanel.add(scroller);
 
 
@@ -219,6 +219,12 @@ public class TeachersFrame extends JFrame{
                 townTField.setText("");
                 titleTField.setText("");
                 universityTField.setText("");
+
+                cancelBtn.setVisible(false);
+                saveChangesButton.setVisible(false);
+                editButton.setVisible(true);
+
+                midPanel.validate();
             } catch (SQLException ex) {
                 ex.printStackTrace();
             }
